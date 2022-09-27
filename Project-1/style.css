@@ -16,24 +16,16 @@ h2 {
     margin-bottom: 24px;
 }
 
-a:hover {
-    color: greenyellow
-}
 
 .outer-list > li {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     margin-top: 24px;
     margin-bottom: 24px;
 
-    color: gray;
-}
-
-li:focus {
     color: black;
-    text-decoration: underline;
 }
 
 .inner-list > li {
@@ -42,6 +34,6 @@ li:focus {
     font-weight: bold;
     text-align: left;
     margin-top: 0px;
-    color: green;
+    color: black;
     margin-bottom: 0px;
 }
