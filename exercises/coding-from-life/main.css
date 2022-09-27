@@ -1,1 +1,50 @@
 /* Your CSS Here! */
+body {
+    background: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.plant__pot {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+
+    bottom: 15%;
+    left: 40%;
+}
+
+.plant__pot__bottom {
+    width: 200px;
+    height: 25px;
+    background-color: tan;
+    position: absolute;
+
+    bottom: 15%;
+    left: 40%;
+}
+
+.plant__leaves {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    border-radius: 5% 10%;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    top: 100px;
+    position: absolute;
+    font-size: 50px;
+    width: 100%;
+}
