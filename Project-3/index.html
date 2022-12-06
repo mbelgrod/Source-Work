@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vph2iin.css">
+    <style>
+
+        
+	</style>
+</head>
+<body>
+
+    <div class="landing-image">
+    	<div class="landing-text">
+          <h1>WHAT <span class="otherheaderother">DO</span><span class="otherheader"> ASTROLOGY </span>& <span class="otherheader"> PIZZA </span> HAVE IN <span class="otherheaderother">COMMON</span> <span class="otherheaderother">?</span><span class="otherheader">?</span></h1>
+          <a href="index2.html" class="button">READ ON</a>
+        </div>
+    </div>
+
+	<script>
+		let body = document.querySelector("body");
+		let target = document.querySelector(".landing-image");
+		let sparkles = [];
+		let i = 0;
+		function sparkle(e) {
+			let image = document.createElement('img');
+			image.src = `sparkle.svg`;
+			image.classList.add("sparkle");
+			image.style.transform = `translateX(${Math.random()*75-10}px) translateY(${Math.random()*75-10}px) scale(${Math.random()})`;
+			image.style.filter = `hue-rotate(${Math.random()*360}deg)`;
+			image.style.top = (e.clientY - 25) + "px";
+			image.style.left = (e.clientX - 25) + "px";
+			sparkles.push(image);
+			target.appendChild(image);
+		}
+		setInterval(() => {
+			if (sparkles.length != 0) {
+				sparkles[0].remove();
+				sparkles.splice(0, 1);
+			}
+		}, 20)
+		body.addEventListener('mousemove', sparkle);
+	</script>
+</body>
+</html>

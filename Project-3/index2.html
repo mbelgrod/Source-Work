@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vph2iin.css">
+</head>
+<body>
+    <div class="essay">
+
+    <p> A lot more than you’d think. </p>
+        <p>Let’s start off with the awe-inspiring lyric: When the moon hits your eye like a big pizza pie.</p> <p> <span class="imagehover" id="blink">That’s… astrology and pizza.<img src="blink.gif" alt=""></span> </p>
+        <p>This line captures a verbal and visual rhyme happening between the two worlds. They’re both captivating. People have been drawn to the two for centuries. Oftentimes for the same reason. But let’s break it down together. Shall we? </p>
+    <p id="subhead">First, they’re circular.</p>
+        <p>The moon, the stars, the planets, and their orbits are essentially a bunch of <span class="imagehover" id="solarsystem">circles<img src="solarsystem.gif" alt=""></span> floating around the universe. Western astrologers simplified it all into a circular zodiac chart that’s sliced up into 12 houses. Yum. <br>
+    <p id="subhead">Next, they’re timeless.</p>
+        <p> Humans have been looking up at the stars and trying to understand them for thousands of years. Even after being scientifically disproven in the 17th century, astrology made a comeback in the 20th century in newspapers; today, it’s everywhere. Astrology was and still is a practice of relating what’s happening up there to down here at a human level. For many, myself included, it’s a way to rationalize things that don’t feel so rational because the world right now isn’t rational. </p>
+        <p> Pizza, too, has been around for a while. What began as fancy flatbreads became the beauty we know today. I can only imagine, it’s been a go-to for drunchies ever since the dawn of time. Caveman, sailors and drunk girls alike know that one slice alone will bring you back into your body. </p>
+    <p id="subhead">They’re personal.</p>
+        <p>Ever tried deciphering a birth chart on your own? Impossible. They’re complicated because they try to comprehensively capture a person. Let’s take the Western natal chart, for example. It uses the exact date, time, and location of your birth to recreate a snapshot of the sky at your precise moment of arrival. With this info, you are given a special place within the 12 houses, 12 planets, and 12 signs. Each house represents a different area of your life. Each planet symbolizes different ideas (e.g., Venus represents values and love). The signs show how the planets come into play. For instance, if Venus is about values and love, Venus in the airy zodiac sign of Gemini will express itself through curiosity, communication, and play. Confused? Just let an astrologer or app do it for you.</p>
+        <p>As for <span class="imagehover" id="pizza">pizza,<img src="pizza.gif" alt=""></span> it’s a personal matter. Everyone’s got their favorite place. Their favorite slice. And many are ready to fight about it. I’m team <span class="imagehover" id="marvin">Pizza Marvin<img src="Marvins_shirt.gif" alt=""></span> forever baby. Come at me.
+    <p id="subhead">They’re social.</p>
+        <p>Astrology and pizza are a perfect party pairing. There’s nothing more heroic than walking into a party with a stack of pizzas. Once everyone’s full and happy, it’s time to read the stars. See what’s really up in everyone’s lives. And most importantly, double check if your friend is really compatible with her crush. It could save her some tears. </p>
+    <p id="subhead">They’re comforting.</p>
+         <p>When life throws you a curveball, you could do one of two things: attack it dead on or cower into a little burrata ball and seek comfort. Both astrology and pizza are there for me in times of need. With one hand I can flip through my astrology app to see what lies ahead, and in the other, I can shove pizza into my mouth.</p>
+    <p id="subhead">They’re cheesy.</p>
+        <p>Co-Star just told me: The union of imagination and reality is beautiful. Hell yeah. The cheesier, the better for both astrology and pizza. While my therapist gives it to me straight, astrology offers a poetic interpretation of what’s going on in my head. It makes the advice more palatable, just like cheese on bread–but I dare not overdo either. Let’s just say I’ll be too afraid to leave the house.</p>
+    <p id="subhead">They’re commodified.</p> 
+        <p>Along with everything else good in life, astrology and pizza have been co-opted by companies to sell their products. In 2019, Amazon sent out <span class="imagehover" id="amazon">shopping recommendations as horoscopes<img src="amazon.gif" alt=""></span> to its Prime Insider subscribers. Parade, the D2C underwear company, just released <span class="imagehover" id="tarot">“Zodiac Satin Cheeky & Tarot Card” bundles.<img src="tarot.gif" alt=""></span></p>
+        <p>Pizza is no longer only edible. It’s <span class="imagehover" id="onesie">wearable<img src="onesie.gif" alt=""></span>. It’s decorative (pillow, neon light). It’s even rideable. Name an object and someone’s probably made pizza-related. Pizza rocket? Done. </p>
+    <p id="subhead">And lastly, they’re open to interpretation.</p> 
+        <p>Different cultures and individuals have their own ways of interpreting the stars. Chinese astrology follows a 12-year lunar cycle whereas Western astrology follows a solar cycle. Vedic astrology focuses on astral patterns of light and how they influence the destiny or Dharma of humans. Astrologers, too, have their own styles. Some focus on the good, others dig into the bad (*cough cough* <span class="imagehover" id="costar">Co-Star,<img src="costar.gif" alt=""></span>). </p>
+        <p>Similarly, the ever-inventive human race is constantly evolving the canvas that is a pizza. To name a few oddities: cheeseburger pizza, taco pizza, reindeer pizza, chili cheese frito pizza and last but not least, pizza pizza.</p>
+    </div>
+    <script>
+		document.addEventListener('mousemove', sparkle);
+		let body = document.querySelector("body");
+		let sparkles = [];
+		let i = 0;
+		function sparkle(e) {
+			let image = document.createElement('img');
+			image.src = `sparkle.svg`;
+			image.classList.add("sparkle");
+			image.style.transform = `translateX(${Math.random()*75-10}px) translateY(${Math.random()*75-10}px) scale(${Math.random()})`;
+			image.style.filter = `hue-rotate(${Math.random()*360}deg)`;
+			image.style.top = (e.clientY - 25) + "px";
+			image.style.left = (e.clientX - 25) + "px";
+			sparkles.push(image);
+			body.appendChild(image);
+		}
+		setInterval(() => {
+			if (sparkles.length != 0) {
+				sparkles[0].remove();
+				sparkles.splice(0, 1);
+			}
+		}, 20)
+</body>
+</html>
