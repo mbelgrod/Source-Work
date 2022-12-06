@@ -97,7 +97,7 @@ img {
   }
 
 #blink:hover img {
-    left: 0vw;
+    left: 1vw;
     top: 50vh;
 }
 
