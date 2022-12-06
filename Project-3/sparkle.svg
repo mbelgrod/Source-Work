@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.75 29.75">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #cd29e6;
-      }
-    </style>
-  </defs>
-  <g id="Layer_1-2" data-name="Layer 1">
-    <polygon class="cls-1" points="16.37 16.37 29.75 14.87 16.37 13.38 14.87 0 13.38 13.38 0 14.87 13.38 16.37 14.87 29.75 16.37 16.37"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000081627911920502704600000012882589240029986433_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 29.8 29.8"
+	 style="enable-background:new 0 0 29.8 29.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5E149E;}
+</style>
+<path class="st0" d="M29.7,14.9c-8.2,0-14.9,6.7-14.9,14.9c0-8.2-6.7-14.9-14.9-14.9c8.2,0,14.9-6.7,14.9-14.9
+	C14.9,8.2,21.5,14.9,29.7,14.9z"/>
 </svg>

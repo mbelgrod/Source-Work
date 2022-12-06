@@ -35,9 +35,9 @@
         <p>Different cultures and individuals have their own ways of interpreting the stars. Chinese astrology follows a 12-year lunar cycle whereas Western astrology follows a solar cycle. Vedic astrology focuses on astral patterns of light and how they influence the destiny or Dharma of humans. Astrologers, too, have their own styles. Some focus on the good, others dig into the bad (*cough cough* <span class="imagehover" id="costar">Co-Star,<img src="costar.gif" alt=""></span>). </p>
         <p>Similarly, the ever-inventive human race is constantly evolving the canvas that is a pizza. To name a few oddities: cheeseburger pizza, taco pizza, reindeer pizza, chili cheese frito pizza and last but not least, pizza pizza.</p>
     </div>
-    <script>
-		document.addEventListener('mousemove', sparkle);
+	<script>
 		let body = document.querySelector("body");
+		let target = document.querySelector(".essay");
 		let sparkles = [];
 		let i = 0;
 		function sparkle(e) {
@@ -45,11 +45,11 @@
 			image.src = `sparkle.svg`;
 			image.classList.add("sparkle");
 			image.style.transform = `translateX(${Math.random()*75-10}px) translateY(${Math.random()*75-10}px) scale(${Math.random()})`;
-			image.style.filter = `hue-rotate(${Math.random()*360}deg)`;
+			// image.style.filter = `hue-rotate(${Math.random()*360}deg)`;
 			image.style.top = (e.clientY - 25) + "px";
 			image.style.left = (e.clientX - 25) + "px";
 			sparkles.push(image);
-			body.appendChild(image);
+			target.appendChild(image);
 		}
 		setInterval(() => {
 			if (sparkles.length != 0) {
@@ -57,5 +57,7 @@
 				sparkles.splice(0, 1);
 			}
 		}, 20)
+		body.addEventListener('mousemove', sparkle);
+	</script>
 </body>
 </html>
